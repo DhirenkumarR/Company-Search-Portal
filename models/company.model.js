@@ -3,7 +3,8 @@ import mongoose from 'mongoose';
 const companySchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     website: {
         type: String
@@ -12,7 +13,7 @@ const companySchema = new mongoose.Schema({
         name: {
             type: String
         },
-        id: mongoose.Types.ObjectId,
+        id: Number,
         _id: 0
     },
     linkedinProfileURL: {
@@ -21,6 +22,8 @@ const companySchema = new mongoose.Schema({
 }, {
     timestamps: true
 });
+
+
 
 const Company = mongoose.model("Company", companySchema);
 export default Company;

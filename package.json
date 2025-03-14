@@ -5,7 +5,8 @@
   "description": "This prject is for company portal where users can find IT companies list for city vise.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "seed": "node seeders/index.js"
   },
   "author": "Dhirenkumar Rathod",
   "license": "ISC",

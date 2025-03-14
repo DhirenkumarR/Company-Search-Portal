@@ -1,9 +1,15 @@
 import mongoose from 'mongoose';
 
 const citySchema = new mongoose.Schema({
+    id: {
+        type: Number,
+        required: true,
+        unique: true
+    },
     name: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     }
 }, {
     timestamps: true
