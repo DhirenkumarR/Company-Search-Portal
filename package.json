@@ -1,0 +1,22 @@
+{
+  "name": "company-search-portal",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "This prject is for company portal where users can find IT companies list for city vise.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Dhirenkumar Rathod",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "http-status-codes": "^2.3.0",
+    "mongoose": "^8.12.1",
+    "nodemon": "^3.1.9",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
